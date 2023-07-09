@@ -44,8 +44,9 @@ also while defining a function you can use stack for input/output of function.
 
 Example:
 `xor:[-[-*^]]`
-this example function is a xor gate\n```
-        if first input is 1:\n
-           flip next input and output it\n
-        else:\n
-           output is the same as next input so nothing to do, output is already there```
+this example function is a xor gate
+
+    if first input is 1:
+        flip next input and output it
+    else:
+        output is the same as next input so nothing to do, output is already there
