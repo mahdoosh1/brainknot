@@ -13,7 +13,7 @@ and it has a variable called current bit
 - \> pops 1 bit from input stack (it's pop-only stack)
 - \< pushes current bit to output stack (it's push-only stack)
 - \- pops from main stack to current bit (overwrites it)
-- \^ pushes current bit to stack (does not change current bit)
+- \+ pushes current bit to stack (does not change current bit)
 - \* flips current bit (like a not gate. flips 1 to 0 and flips 0 to 1)
 
 # if-else statement
