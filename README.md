@@ -10,20 +10,15 @@ it uses stack instead of memory line
 and it has a variable called current bit
 
 # basic symbols
-">" pops 1 bit from input stack (it's pop-only stack)
-
-"<" pushes current bit to output stack (it's push-only stack)
-
-"-" pops from main stack to current bit (overwrites it)
-
-"^" pushes current bit to stack (does not change current bit)
-
-"*" flips current bit (like a not gate. flips 1 to 0 and flips 0 to 1)
+- \> pops 1 bit from input stack (it's pop-only stack)
+- \< pushes current bit to output stack (it's push-only stack)
+- \- pops from main stack to current bit (overwrites it)
+- \^ pushes current bit to stack (does not change current bit)
+- \* flips current bit (like a not gate. flips 1 to 0 and flips 0 to 1)
 
 # if-else statement
-"\[" starts if statement (dont get wrong with loops in brainfuck)
-
-"]" stops if statement, Example: `[do if,do else]`
+- \[ starts if statement (dont get wrong with loops in brainfuck)
+- \] stops if statement, Example: `[do if,do else]`
 
 if current bit is 1, run first argument (arguments are splited with camma)
 
@@ -37,11 +32,9 @@ Example: `>[>*<,><]`
 this example takes 2 input and xors them and pushes the result to output
 
 # loop
-"(" starts while loop(if current bit is 1)
-
-")" is end of while loop
-
-"." breaks the loop.
+- \( starts while loop(if current bit is 1)
+- \) is end of while loop
+- \. breaks the loop.
 
 Example: `*(>[^])*(-<[*]*)`
 
@@ -49,7 +42,7 @@ this examples first moves input to stack untill input is 0 (move first line of o
 then starts another loop which moves stack to output (outputs first line of ones)
 
 # define a function
-":" defines a function.
+- \: defines a function.
 
 name in the right
 
