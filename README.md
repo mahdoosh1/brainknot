@@ -17,8 +17,8 @@ and it has a variable called current bit
 - \*: flips current bit (like a not gate. flips 1 to 0 and flips 0 to 1)
 
 # if-else statement
-- \[: starts if statement (dont get wrong with loops in brainfuck)
-- \]: ends if statement, Example: `[do if,do else]`
+- \[ starts if statement (dont get wrong with loops in brainfuck)
+- \] ends if statement, Example: `[do if,do else]`
 
 if current bit is 1, run first argument (arguments are splited with camma)
 
@@ -32,9 +32,9 @@ Example: `>[>*<,><]`
 this example takes 2 input and xors them and pushes the result to output
 
 # loop
-- \(: starts while loop(if current bit is 1)
-- \): is end of while loop
-- \.: breaks the loop.
+- \( starts while loop(if current bit is 1)
+- \) is end of while loop
+- \. breaks the loop.
 
 Example: `*(>[^])*(-<[*]*)`
 
