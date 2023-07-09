@@ -10,11 +10,11 @@ it uses stack instead of memory line
 and it has a variable called current bit
 
 # basic symbols
-- \>: pops 1 bit from input stack (it's pop-only stack)
-- \<: pushes current bit to output stack (it's push-only stack)
-- \-: pops from main stack to current bit (overwrites it)
-- \^: pushes current bit to stack (does not change current bit)
-- \*: flips current bit (like a not gate. flips 1 to 0 and flips 0 to 1)
+- \> pops 1 bit from input stack (it's pop-only stack)
+- \< pushes current bit to output stack (it's push-only stack)
+- \- pops from main stack to current bit (overwrites it)
+- \^ pushes current bit to stack (does not change current bit)
+- \* flips current bit (like a not gate. flips 1 to 0 and flips 0 to 1)
 
 # if-else statement
 - \[ starts if statement (dont get wrong with loops in brainfuck)
