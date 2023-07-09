@@ -26,10 +26,11 @@ and it has a variable called current bit
 "]" stops if statement, Example: `[do if,do else]`
 
 if current bit is 1, run first argument (arguments are splited with camma)
+
 if current bit is 0, run second argument
 
 also you dont need two arguments, you can use `[do smt]` for only if statement
-or you can use [,do smt] for only else statement.
+or you can use `[,do smt]` for only else statement.
 
 Example: `>[>*<,><]`
 
