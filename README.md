@@ -41,6 +41,8 @@ then starts another loop which moves stack to output (outputs first line of ones
 name in the right
 functionality in left(should be in [] to seprate main program with defining)
 also while defining a function you can use stack for input/output of function.
+and you call a function with its name, you dont need anything.
+but note that you have to seprate two rapid functions with space
 
 Example:
 `xor:[-[-*^]]`
