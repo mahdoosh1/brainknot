@@ -36,7 +36,7 @@ this example takes 2 input and xors them and pushes the result to output
 - \) is end of while loop
 - \. breaks the loop.
 
-Example: `*(>[^])*(-<[*]*)`
+Example: `*(>[+])*(-<[*]*)`
 
 this examples first moves input to stack untill input is 0 (move first line of ones to stack)
 then starts another loop which moves stack to output (outputs first line of ones)
@@ -53,7 +53,7 @@ and you call a function with its name, you dont need anything.
 but note that you have to seprate two rapid functions with space
 
 Example:
-`xor:[-[-*^]]`
+`xor:[-[-*+]]`
 
 this example function is a xor gate
 
