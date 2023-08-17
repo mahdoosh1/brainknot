@@ -4,7 +4,7 @@ It's a similar language to Brainfuck. But with some changes
 # syntax
 it's the same, but alphabet are not counted as comments, you need # before every comment
 
-# what's the twist?
+# what's the difference?
 Unlike Brainfuck, brainknot is based on bits instead of bytes.
 It uses stack instead of memory line
 and it has a variable called current bit
@@ -45,11 +45,15 @@ then starts another loop which moves stack to output (outputs first line of ones
 
 Name in the right
 
-functionality in left(should be in [] to separate main program with defining)
+functionality in left(should be in [] to separate main program with defining, and wont run while defining.)
 
-Also while defining a function you can use stack for input/output of function.
+if you use (parenthesis), function will  be called while defining.
+
+while defining a function you can use stack for input/output of function.
 And you call a function with its name, you don't need anything.
-But note that you have to separate two rapid functions with space
+But note that you have to separate two rapid functions with space.
+
+you can define recursive functions as well.
 
 Example:
 `xor:[-[-*+]]`
