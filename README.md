@@ -71,3 +71,44 @@ so you can define another functionality for it in your interpreter
 And i have not mentioned what underline "_" does. So you can define it in your interpreter
 also, numbers are used to change which stack are we using.
 0 is default, and you can use multiple numbers, like 11 or 69420.
+
+# Version 1
+
+`>` input
+`<` output
+`[` if
+`]` end of if
+`*` flip(aka invert/not)
+
+# Version 2
+
+`,` else
+`(` loop start
+`)` loop check/end
+`.` break loop
+
+# Version 3
+
+`-` pop/pull
+`+` push
+`abc:[]` define
+`abc:[]` define and call
+`abc` call
+` ` seprate funcs
+
+# Version 4
+
+`0` set to stack 0
+`1` set to stack 1
+`10` set to stack 10
+`[a,b,c]` check current bit and then run `c` first, then run `a` or `b` depending on current bit check before
+
+# Version Extra
+
+`^` put a black/white pixel on screen depending on current bit(0 black,1 white) and go to next pixel
+`\` next line in screen
+`;` update screen/draw frame(and go back to starting pixel)
+`{Hello World}` print to console
+`/comment/` put a comment
+`~` pop without remove
+`_` clear stack
