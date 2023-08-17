@@ -9,14 +9,14 @@ Unlike Brainfuck, brainknot is based on bits instead of bytes.
 It uses stack instead of memory line
 and it has a variable called current bit
 
-# basic symbols
+# basic symbols (V1/V3)
 - \> pops 1 bit from input stack (it's pop-only stack)
 - \< pushes current bit to output stack (it's push-only stack)
 - \- pops from main stack to current bit (overwrites it)
 - \+ pushes current bit to stack (does not change current bit)
 - \* flips current bit (like a not gate. Flips 1 to 0 and flips 0 to 1)
 
-# if-else statement
+# if-else statement (V1/V2)
 - \[ starts if statement (don't get wrong with loops in Brainfuck)
 - \] ends if statement, Example: `[do if,do else]`
 
@@ -30,7 +30,7 @@ Example: `>[>*<,><]`
 
 this example takes 2 input and xors them and pushes the result to output
 
-# loop
+# loop (V2)
 - \( starts while loop(if current bit is 1)
 - \) is end of while loop
 - \. breaks the loop.
@@ -40,7 +40,7 @@ Example: `*(>[+])*(-<[*]*)`
 this examples first moves input to stack until input is 0 (move first line of ones to stack)
 then starts another loop which moves stack to output (outputs first line of ones)
 
-# define a function
+# define a function (V3)
 - \: defines a function.
 
 Name in the right
@@ -65,50 +65,70 @@ This example function is a xor gate
     else:
         output is the same as next input so nothing to do, output is already there
 
-# a final thing i want to mention after all.
-i feel dot (.) is useless because loop ends if current bit is 0 or an error happens
-so you can define another functionality for it in your interpreter
-And i have not mentioned what underline "_" does. So you can define it in your interpreter
-also, numbers are used to change which stack are we using.
+# Stack changing
+numbers are used to change which stack are we using.
 0 is default, and you can use multiple numbers, like 11 or 69420.
 
-# Version 1
+#Versions
+
+### Version 1
 
 `>` input
+
 `<` output
+
 `[` if
+
 `]` end of if
+
 `*` flip(aka invert/not)
 
-# Version 2
+### Version 2
 
 `,` else
+
 `(` loop start
+
 `)` loop check/end
+
 `.` break loop
 
-# Version 3
+### Version 3
 
 `-` pop/pull
-`+` push
-`abc:[]` define
-`abc:[]` define and call
-`abc` call
-` ` seprate funcs
 
-# Version 4
+`+` push
+
+`abc:[]` define
+
+`abc:()` define and call
+
+`abc` call
+
+` ` (space)seprate funcs
+
+### Version 4
 
 `0` set to stack 0
+
 `1` set to stack 1
+
 `10` set to stack 10
+
 `[a,b,c]` check current bit and then run `c` first, then run `a` or `b` depending on current bit check before
 
-# Version Extra
+### Version Extra
 
 `^` put a black/white pixel on screen depending on current bit(0 black,1 white) and go to next pixel
+
 `\` next line in screen
+
 `;` update screen/draw frame(and go back to starting pixel)
+
 `{Hello World}` print to console
+
 `/comment/` put a comment
+
 `~` pop without remove
-`_` clear stack
+
+`_` print stack to console
