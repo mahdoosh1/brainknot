@@ -1,19 +1,13 @@
+V4
 and:[-[,+]]
 or:[-[-[,*]+]]
 xor:[-[-*+]]
-#logicgates
 
-hast:[-[-+*+,[-*+*,+,,+]]]
-#halfaddersumtop
+hasumtop:[-[-+*+,[-*+*,+,,+]]]
+hacarrytop:[-[-*+*]+]
 
-hact:[-[-*+*]+]
-#halfaddercarrytop
-
-fact:[hact-[hact-[,*]+,hact]]
-#fulladdercarrytop
+facarrytop:[hacarrytop-[hacarrytop-[,*]+,hacarrytop]]
 
 swap:[-[-[++,*+*+],-[*+*+,++]]]
-#swaptopandsecond-notefficient
 
-fast:[fact swap]
-#fulladdersumtop
+fasumtop:[facarrytop swap]
