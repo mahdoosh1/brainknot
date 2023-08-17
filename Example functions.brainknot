@@ -1,1 +1,19 @@
-this will be overwritten
+and:[-[,+]]
+or:[-[-[,*]+]]
+xor:[-[-*+]]
+#logicgates
+
+hast:[-[-+*+,[-*+*,+,,+]]]
+#halfaddersumtop
+
+hact:[-[-*+*]+]
+#halfaddercarrytop
+
+fact:[hact-[hact-[,*]+,hact]]
+#fulladdercarrytop
+
+swap:[-[-[++,*+*+],-[*+*+,++]]]
+#swaptopandsecond-notefficient
+
+fast:[fact swap]
+#fulladdersumtop
