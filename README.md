@@ -69,7 +69,7 @@ This example function is a xor gate
 numbers are used to change which stack are we using.
 0 is default, and you can use multiple numbers, like 11 or 69420.
 
-#Versions
+# Versions
 
 ### Version 1
 
