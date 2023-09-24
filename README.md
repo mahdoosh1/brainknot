@@ -2,7 +2,7 @@
 It's a similar language to Brainfuck. But with some changes
 
 # syntax
-it's the same, but alphabet are not counted as comments, you need # before every comment
+it's the same, but alphabet are not counted as comments, you need a spcific symbol before every comment
 
 # what's the difference?
 Unlike Brainfuck, brainknot is based on bits instead of bytes.
