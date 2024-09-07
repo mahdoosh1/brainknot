@@ -3,7 +3,7 @@ and:[-[,+]]
 or:[-[-[,*]+]]
 xor:[-[-*+]]
 
-hasumtop:[-[-+*+,[-*+*,+,,+]]]
+hasumtop:[-[-+*,-[*+*,+]]+]
 hacarrytop:[-[-*+*]+]
 
 facarrytop:[hacarrytop-[hacarrytop-[,*]+,hacarrytop]]
