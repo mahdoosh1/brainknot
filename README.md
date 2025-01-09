@@ -129,6 +129,6 @@ numbers are used to change which stack are we using.
 
 `/comment/` put a comment
 
-`~` pop without remove
+`~` get last bit (not pop)
 
 `_` print stack to console
